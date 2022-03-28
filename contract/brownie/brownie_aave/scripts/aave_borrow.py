@@ -139,6 +139,4 @@ def get_lending_pool():
         config["networks"][network.show_active()]["lending_pool_addresses_provider"]
     )
     lending_pool_address = lending_pool_addresses_provider.getLendingPool()
-    lending_pool = interface.ILendingPool(lending_pool_address)
-
-    return lending_pool
+    return interface.ILendingPool(lending_pool_address)
